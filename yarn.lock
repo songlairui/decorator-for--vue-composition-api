@@ -1822,6 +1822,13 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
+babel-preset-vca-jsx@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.npm.taobao.org/babel-preset-vca-jsx/download/babel-preset-vca-jsx-0.3.5.tgz#ff425b15247724c2f602f0b5017a00a32872765d"
+  integrity sha1-/0JbFSR3JML2AvC1AXoAoyhydl0=
+  dependencies:
+    "@babel/plugin-syntax-jsx" "^7.2.0"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
