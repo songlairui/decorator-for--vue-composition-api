@@ -1,26 +1,25 @@
-import { defineComponent, onMounted, ref } from "@vue/composition-api";
+import { defineComponent, reactive } from "@vue/composition-api";
+import ROUTES from "vue-auto-routing";
 import "./App.less";
+console.info("ROUTES", ROUTES);
 
 export default defineComponent({
+  name: "App",
   setup() {
-    const root = ref(null);
-
-    onMounted(() => {
-      // the DOM element will be assigned to the ref after initial render
-      console.log(root.value); // <div/>
+    const state = reactive({
+      count: 0,
     });
-
-    return {
-      root,
-    };
-  },
-  render() {
-    // with JSX
-    return (
+    const routes = reactive([
+      ...ROUTES.map((item) => ({ path: item.path, name: item.name })),
+    ]);
+    console.info("routes", routes);
+    return () => (
       <div id="app" ref="root">
         <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+          {routes.map((item) => (
+            <router-link to={item.path}>{item.name || item.path}</router-link>
+          ))}
+          {state.count}
         </div>
         <router-view />
       </div>
