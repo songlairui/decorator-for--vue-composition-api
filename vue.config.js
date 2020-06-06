@@ -1,3 +1,9 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+
+  pluginOptions: {
+    autoRouting: {
+      chunkNamePrefix: 'page-'
+    }
+  }
 }
