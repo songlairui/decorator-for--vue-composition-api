@@ -17,7 +17,9 @@ export default defineComponent({
       <div id="app" ref="root">
         <div id="nav">
           {routes.map((item) => (
-            <router-link to={item.path}>{item.name || item.path}</router-link>
+            <router-link to={`/${item.path}`}>
+              {item.name || item.path}
+            </router-link>
           ))}
           {state.count}
         </div>
