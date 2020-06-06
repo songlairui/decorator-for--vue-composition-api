@@ -1295,6 +1295,15 @@
     lodash "^4.17.15"
     pretty "^2.0.0"
 
+"@vue/ui@^0.11.6":
+  version "0.11.6"
+  resolved "https://registry.npm.taobao.org/@vue/ui/download/@vue/ui-0.11.6.tgz#4b249774812e0025812adeb74b7078a4be43dfaf"
+  integrity sha1-SySXdIEuACWBKt63S3B4pL5D368=
+  dependencies:
+    focus-visible "^4.1.5"
+    v-tooltip "^3.0.0-alpha.11"
+    vue-resize "^0.4.5"
+
 "@vue/web-component-wrapper@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@vue/web-component-wrapper/-/web-component-wrapper-1.2.0.tgz#bb0e46f1585a7e289b4ee6067dcc5a6ae62f1dd1"
@@ -4019,6 +4028,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-visible@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.npm.taobao.org/focus-visible/download/focus-visible-4.1.5.tgz#50b44e2e84c24b831ceca3cce84d57c2b311c855"
+  integrity sha1-ULROLoTCS4Mc7KPM6E1XwrMRyFU=
+
 follow-redirects@^1.0.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.11.0.tgz#afa14f08ba12a52963140fe43212658897bc0ecb"
@@ -6608,6 +6622,11 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+popper.js@^1.16.0:
+  version "1.16.1"
+  resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
+
 portfinder@^1.0.26:
   version "1.0.26"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.26.tgz#475658d56ca30bed72ac7f1378ed350bd1b64e70"
@@ -8706,6 +8725,14 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
+v-tooltip@^3.0.0-alpha.11:
+  version "3.0.0-alpha.13"
+  resolved "https://registry.npm.taobao.org/v-tooltip/download/v-tooltip-3.0.0-alpha.13.tgz#eca576b5d35486a55289bfbd9f8365540364feba"
+  integrity sha1-7KV2tdNUhqVSib+9n4NlVANk/ro=
+  dependencies:
+    popper.js "^1.16.0"
+    vue-resize "^0.4.5"
+
 v8-compile-cache@^2.0.3:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
@@ -8770,6 +8797,11 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-resize@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.npm.taobao.org/vue-resize/download/vue-resize-0.4.5.tgz#4777a23042e3c05620d9cbda01c0b3cc5e32dcea"
+  integrity sha1-R3eiMELjwFYg2cvaAcCzzF4y3Oo=
 
 vue-router@^3.2.0:
   version "3.3.2"

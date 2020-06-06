@@ -1,3 +1,5 @@
+declare module "@vue/ui";
+
 declare module "*.bmp" {
   const src: string;
   export default src;
