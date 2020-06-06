@@ -1,0 +1,13 @@
+diff --git a/node_modules/vue-route-generator/lib/index.js b/node_modules/vue-route-generator/lib/index.js
+index 23295d6..dd9b66c 100644
+--- a/node_modules/vue-route-generator/lib/index.js
++++ b/node_modules/vue-route-generator/lib/index.js
+@@ -7,7 +7,7 @@ const fg = require("fast-glob");
+ const routes_1 = require("./template/routes");
+ const resolve_1 = require("./resolve");
+ function generateRoutes({ pages, importPrefix = '@/pages/', dynamicImport = true, chunkNamePrefix = '', nested = false, }) {
+-    const patterns = ['**/*.vue', '!**/__*__.vue', '!**/__*__/**'];
++    const patterns = ['**/*.vue', '!**/__*__.vue', '**/*.tsx', '!**/__*__.tsx', '!**/__*__/**'];
+     const pagePaths = fg.sync(patterns, {
+         cwd: pages,
+         onlyFiles: true,
